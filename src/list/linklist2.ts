@@ -12,9 +12,6 @@ const head = 3 // 头指针
 function add(idx: number, p: number, val: number) {
   // 暂存之前的指向，记忆中间插入后面的节点地址
   next[p] = next[idx]
-  // 在index节点后面添加节点p（地址）
-  // 所以是next数组存储p的地址
-  //   地址域 下一个节点存储上一个节点的地址
   next[idx] = p
   data[p] = val
 }
